@@ -158,7 +158,7 @@ const semesterResults = [
 // Initialize App
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM Content Loaded');
-    
+
     // Check if user is already logged in
     const savedUser = localStorage.getItem('currentUser');
     if (savedUser) {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Login form element not found!');
         return;
     }
-    
+
     loginFormEl.addEventListener('submit', function (e) {
         e.preventDefault();
         const email = document.getElementById('emailInput').value.trim();
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
         registerFormEl.addEventListener('submit', function (e) {
             e.preventDefault();
             console.log('Register form submitted');
-            
+
             const name = document.getElementById('regName').value.trim();
             const email = document.getElementById('regEmail').value.trim();
             const password = document.getElementById('regPassword').value;
